@@ -42,7 +42,11 @@ The app is developed to provide an airline flight management web application for
    
    ![image](https://user-images.githubusercontent.com/109211264/198833910-eee97c76-ed99-4df3-b3c7-2215fea5e151.png)
 
+   - Staff can see a list of all the passengers booking information by an alphabetical order, on the top of the list, staff can filter the key words to select the target passenger's name.
    
+   ![image](https://user-images.githubusercontent.com/109211264/198834219-d05c4d7a-ad8f-4e30-adc3-af9cac82c59c.png)
+
+
 
   
 3. Public system for customers - New Customer Registration, Login and Update information
