@@ -32,12 +32,16 @@ The app is developed to provide an airline flight management web application for
 
 2. Administrative system for staff
    - The airline staff can access the administrative system by typing url http://127.0.0.1:5000/admin/xx to the pages. The main page of admin system is 'admin/management' where lists all the staff, including names and position, manager or staff, the screenshot shows as below:
- ![image](https://user-images.githubusercontent.com/109211264/198833763-7237ff9e-eeb8-4daf-96c8-ffabea70a4da.png)
+   
+   
+   ![image](https://user-images.githubusercontent.com/109211264/198833763-7237ff9e-eeb8-4daf-96c8-ffabea70a4da.png)
  
-   - Staff can login by selecting their name from the list:
+   - Staff can login by selecting their name from the list;
+   
+   - Each staff can check/edit passengers' list and information by clicking the "Check Passenger List" buttom; also can check/edit flight list by clicking the "Check Flight List" buttom:
+   
    ![image](https://user-images.githubusercontent.com/109211264/198833910-eee97c76-ed99-4df3-b3c7-2215fea5e151.png)
 
-   - Each staff can check/edit passengers' list and information by clicking the "Check Passenger List" buttom; also can check/edit flight list by clicking the "Check Flight List" buttom:
    
 
   
