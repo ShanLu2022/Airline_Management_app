@@ -49,6 +49,7 @@ dbconn = None
 
 app = Flask(__name__)
 
+"""Create function to connect database"""
 def getCursor():
     global dbconn
     global connection
@@ -83,8 +84,6 @@ def flight_arr():
 
     column_names = [item[0] for item in cur.description]
 
-    # print(f"{column_names}")
-    # print(arr_result)
     return render_template('arrivals_info.html', data=arr_result, name='Arrival Flights')
 
 
@@ -96,13 +95,8 @@ def flight_dep():
     dep_result = cur.fetchall()
     return render_template('dep_info.html', data=dep_result, name='Departure Flights')
 
-# """Customer_page"""
-# @app.route("/customer_page")
-# def customer_info():
-#     return render_template('customer_page.html', )
 
-
-"""Customer login"""
+"""Customer login function"""
 @app.route("/customer", methods=['GET', 'POST'])
 def cust_login():
     cur = getCursor()
@@ -158,7 +152,7 @@ def logout():
     return render_template('index.html')
 
 
-"""Customer Update Contacts"""
+"""Passenger Update Contact function"""
 @app.route('/customer/update', methods=['GET', 'POST'])
 def customer_update():
     if request.method == 'POST':
@@ -204,7 +198,7 @@ def flight_manifest():
     return render_template('flight_manifest.html', data=select_result, name=select_result)
 
 
-"""Admin page"""
+"""Admin page - first showing the management page"""
 @app.route('/admin/management')
 def management():
     cur = getCursor()
@@ -218,7 +212,7 @@ def management():
         return render_template('management.html', data=management_record, name='management_record')
 
 
-"""Staff login by clicking the name"""
+"""Staff login by clicking the their last name"""
 @app.route('/admin/staff')
 def search_staff():
     lastname = request.args.get('lastname')
@@ -229,7 +223,6 @@ def search_staff():
                 "from airline.staff sf Where sf.LastName=%s ", (lastname,))
     select_result = cur.fetchone()
     return render_template('staff_page.html', data=select_result, name=select_result)
-
 
 
 """Show a list of all the flights to the selected staff"""
