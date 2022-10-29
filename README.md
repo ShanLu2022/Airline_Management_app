@@ -29,14 +29,25 @@ The app is developed to provide an airline flight management web application for
    - Page footer shows the contact information of Air Whakatū.
   
    - On the top of the page shows the current system time "Friday 28 Oct 2022, 5.00pm"
+
+2. Administrative system for staff
+   - The airline staff can access the administrative system by typing url http://127.0.0.1:5000/admin/xx to the pages. The main page of admin system is 'admin/management', the screenshot shows as below:
+ 
   
-2. Public system for customers - New Customer Registration, Login and Update information
+3. Public system for customers - New Customer Registration, Login and Update information
 
   - Customer can login the system via email address on the home page, then nevigate to the login page.
   ![image](https://user-images.githubusercontent.com/109211264/198833149-dd7f0095-da68-44f9-9630-a18dd9110a79.png)
   
-  login page shows the passenger's basic information including first name, last name, email and contact number. On the bottom of the page lists the current and history booking information.
+  - login page shows the passenger's basic information including first name, last name, email and contact number. On the bottom of the page lists the current and history booking information.
   ![image](https://user-images.githubusercontent.com/109211264/198833254-d429eafd-0d83-4ab5-a885-f9f4e5aa97fa.png)
+
+  - Passenger can logout the account by clicking the "Logout" bottom to the main page.
+  - Passenger can edit the personal information by clicking the first name to the update page where passengers can update their basic contact information and submit to system, or reset the original information.
+  ![image](https://user-images.githubusercontent.com/109211264/198833460-e3f15c07-7c51-437e-8bb0-5f95262b8865.png)
+  
+  
+  
 
   
   
