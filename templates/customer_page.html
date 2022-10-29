@@ -1,0 +1,237 @@
+<!--
+    Name: Shan Lu
+    Student ID: 1149887
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <title></title>
+
+          <style>
+
+            article, aside, figure, figcaption, footer, hgroup, header,
+            section, nav {
+               display: block;
+            }
+
+
+            /* Basic Page style */
+
+            body * {
+               font-family: Verdana, Geneva, sans-serif;
+               font-size: 100%;
+               font-weight: inherit;
+               line-height: 1.2em;
+               list-style: none;
+               margin: 0px;
+               padding: 0px;
+               text-decoration: none;
+               vertical-align: baseline;
+            }
+
+            button {
+               background-color: white;
+               width: 250px;
+               color:black;
+               font-size:16px;
+               position:relative;
+               margin-left: 50%;
+               margin-bottom: 5px;
+
+            }
+
+            /* Body Styles */
+            body {
+               width: 95%;
+               min-width: 900px;
+               max-width: 1200px;
+               font-family: Verdana, Geneva, sans-serif;
+               font-weight: normal;
+               font-size: 16px;
+               margin: 0px auto;
+               position: relative;
+               border-left: 1px solid blue;
+               border-right: 1px solid blue;
+            }
+
+            /* Header styles */
+
+            header {
+               float: left;
+               width: 100%;
+
+               -o-background-size: contain;
+               -moz-background-size: contain;
+               -webkit-background-size: contain;
+               background-size: contain;
+
+               background-color: rgb(230, 247, 255);
+               border-bottom: 1px solid blue;
+            }
+
+            header img {
+               display: block;
+               float: left;
+               width: 40%;
+            }
+
+
+
+            /*Navigation list styles */
+
+            header nav {
+               float: left;
+               width: 77%;
+               margin: 20px auto 10px -7%;
+            }
+
+            header nav li {
+               display: inline-block;
+               width: 50%;
+               margin-left: 50%;
+               margin-bottom: 5px;
+               float: left;
+            }
+
+            header nav li a {
+               display: inline-block;
+               width: 100%;
+               height: 50px;
+               line-height: 50px;
+               text-align: center;
+               color: white;
+               font-size: 0.8em;
+               -moz-border-radius: 50px;
+               -webkit-border-radius: 50px;
+               border-radius: 50px;
+               background-color: rgb(26, 117, 255);
+            }
+
+            header nav li a:hover {
+               background-color: rgb(179, 209, 255);
+            }
+
+            header article {
+               float: left;
+               width: 70%;
+            }
+
+
+
+            header h1 {
+               font-size: 2.5em;
+               font-family: "Times New Roman", serif;
+               font-weight: bold;
+               color: rgb(26, 117, 255);
+               letter-spacing: 7px;
+               margin-right: 20%;
+            }
+
+            header p {
+               font-size: 0.9em;
+               color: rgb(26, 117, 255);
+               margin: 10px 25% 10px 10px;
+            }
+
+
+            /* Section styles */
+
+            section {
+               clear: left;
+               width: 100%;
+            }
+
+            section p {
+               color: rgb(20, 153, 255);
+               margin-left: 20px;
+               padding-top: 20px;
+            }
+
+
+            /* Footer Styles */
+
+            footer {
+               border-top: 1px solid blue;
+               background-color: rgb(153, 204, 255);
+               clear: left;
+               margin-top: 20px;
+               padding: 10px 0px;
+            }
+
+            footer address {
+               color: rgb(0, 64, 255);
+               font-style: normal;
+               font-size: 0.8em;
+               text-align: center;
+            }
+      </style>
+
+
+</head>
+
+
+<body>
+    <img src="logo_blue.jpg" id="logoimage" alt="Whakatu Airport" />
+    <h2>Welcome {{data[1][1]}} {{data[1][2]}}! <br><br>
+    <h3> Current Date: Friday, 2022-10-28, 5:00pm</h3>
+    <h2>Your Personal Information is below: </h2>
+    <h3>Email Address: {{data[1][3]}}</h3>
+    <h3>Phone Number: {{data[1][4]}}</h3>
+    <h3>Date of Birth: {{data[1][5]}}</h3>
+    <a href="{{url_for('logout')}}">Logout</a></h2><br>
+
+
+    <h2>Your booking information is listing below:</h2>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Departure Airport</th>
+                <th>Flight Number</th>
+                <th>Flight Date</th>
+                <th>Dep Time</th>
+                <th>Arr Time</th>
+                <th>Flight Status</th>
+                <th>Aircraft Code</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+        {% for row in data%}
+        <tr>
+            <td><a href="/customer/update?passengerid={{row[0]}}">{{row[1]}}</a></td>
+            <td>{{row[2]}}</td>
+            <td>{{row[6]}}</a></td>
+            <td>{{row[7]}}</td>
+            <td>{{row[8]}}</td>
+            <td>{{row[9]}}</td>
+            <td>{{row[10]}}</td>
+            <td>{{row[11]}}</td>
+            <td>{{row[12]}}</td>
+
+        </tr>
+        {%endfor%}
+        </tbody>
+    </table>
+
+
+
+   <footer>
+      <address>
+         123 Cessna Lane &bull;
+         Tāhunanui &bull;
+         Nelson 7011 &bull;
+         fly@airwhakatu.co.nz &bull;
+         ph. 03 555 1234 (7 am to 11 pm)
+      </address>
+   </footer>
+
+</body>
+</html>

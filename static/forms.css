@@ -1,0 +1,121 @@
+/*
+   Survey Forms Style Sheet
+   Author: Shan Lu
+   Student ID: 1149887
+   Date:   2022-09-16
+
+*/
+
+
+fieldset {
+    background-color: rgb(255, 246, 205);
+    border: 1px solid blue;
+    float: left;
+    margin: 10px 0px 10px 3%;
+    width: 45%;
+}
+
+legend {
+    background-color: rgb(234, 201, 51);
+    color: white;
+    padding: 3px 0px;
+    text-indent: 5px;
+    width: 100%;
+}
+
+label {
+    clear: left;
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 4% 7px 5px;
+    width: 40%;
+
+}
+
+input {
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 0px;
+    width: 50%;
+}
+
+input#state{
+    width: 50px;
+}
+
+select {
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 0px;
+
+}
+
+fieldset.optionGroup{
+    border-width: 0px;
+}
+
+fieldset.optionGroup label{
+    display: inline;
+    float: none;
+    margin: 0px 3px 0px 0px;
+    width: 30px;
+}
+
+fieldset.optionGroup input {
+    display: inline;
+    float: none;
+    margin: 0px 20px 0px 0px;
+    width: 20px;
+}
+
+textarea {
+    display: block;
+    font-size: 0.9em;
+    float: left;
+    margin:10px 0px;
+    width: 50%;
+
+}
+
+#register {
+    color: rgb(230, 170, 0);
+    float: none;
+    margin: 10px auto;
+    text-align: left;
+    width: 90%;
+}
+
+#register input {
+    display: inline;
+    float: none;
+    width: 20px;
+
+}
+
+label.sliderLabel {
+    clear: none;
+    font-size:0.7em;
+    margin: 10px 0px;
+    text-align: center;
+    width: 10px;
+}
+
+input[type="range"] {
+    width: 150px;
+}
+
+form p {
+    text-align: center;
+}
+
+input[type="submit"], input[type=reset] {
+    display: inline;
+    float: none;
+    height: 40px;
+    width: 200px;
+}
+
+
