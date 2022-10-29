@@ -6,5 +6,6 @@
 #### Student Email: shan.lu@lincolnuni.ac.nz
 
 
-
+## Assignment Background:
+<sub>The app is developed to provide an airline flight management web application for Air Whakatū. </sub>
 
