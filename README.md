@@ -7,9 +7,11 @@
 
 #### ---------------------------------------------------------------------------------------------------
 ## Assignment Background:
+
 The app is developed to provide an airline flight management web application for Air Whakatū. 
+
 1. The main page contains the following functions:
-<sub> 
+
   
   - Home page & general information
     - Home page shows the general information of Air Whakatū
@@ -30,5 +32,5 @@ The app is developed to provide an airline flight management web application for
   
 
 
-</sub>
+
 
