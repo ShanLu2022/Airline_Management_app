@@ -295,6 +295,35 @@ def updatebooking():
             return render_template('passenger_form.html', customerdetails=select_result)
 
 
+"""Edit flight details"""
+@app.route('/admin/editflight', methods=['GET', 'POST'])
+def editflight():
+    if request.method == 'POST':
+        flightid = request.form.get('flightid')
+        flightdate = request.form.get('flightdate')
+        deptime = request.form.get('deptime')
+        arrtime = request.form.get('arrtime')
+        flightstatus = request.form.get('flightstatus')
+        aircraft = request.form.get('aircraft')
+        cur = getCursor()
+
+        print(str(flightid), flightdate, deptime, arrtime, flightstatus)
+        cur.execute("Update airline.flight Set FlightDate = %s, DepTime = %s, ArrTime = %s, FlightStatus=%s, Aircraft=%s "
+                    "Where FlightID = %s", (flightdate, deptime, arrtime, flightstatus, aircraft, str(flightid),))
+        return redirect(url_for("show_flight_list"))
+
+    else:
+        flightid = request.args.get('flightid')
+        if id == '':
+            return redirect('customer_page')
+        else:
+            cur = getCursor()
+            cur.execute("Select  FlightID, FlightNum, FlightDate, DepTime, ArrTime, FlightStatus, Aircraft "
+                        "from airline.flight Where FlightID=%s", (str(flightid),))
+            select_result = cur.fetchone()
+            return render_template('flight_form.html', flightdetails=select_result)
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
