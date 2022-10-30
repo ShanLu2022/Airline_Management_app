@@ -38,7 +38,7 @@ The app is developed to provide an airline flight management web application for
   dbport = "3306"
   dbname = "airline"
   ```
-  Variables to use the data in PythonAnywhere:
+   - Variables to use the data in PythonAnywhere:
    ```
   dbuser = "woshipanda2022" 
   dbpass = "woyaofacai2022$" 
@@ -50,6 +50,7 @@ The app is developed to provide an airline flight management web application for
    
 
 2. Web application
+
   The main page contains the following functions:
 
   
@@ -71,7 +72,7 @@ The app is developed to provide an airline flight management web application for
    - On the top of the page shows the current system time "Friday 28 Oct 2022, 5.00pm"
 
 3. Administrative system for staff
-   - The airline staff can access the administrative system by typing url http://127.0.0.1:5000/admin/xx to the pages. The main page of admin system is 'admin/management' where lists all the staff, including names and position, manager or staff, the screenshot shows as below:
+   - The airline staff can access the administrative system by typing url https://woshipanda2022.pythonanywhere.com/admin/xx or local server http://127.0.0.1:5000/admin/xx to the pages. The main page of system admin is at 'admin/management' where lists all the staff, including names and position, manager or staff, the screenshot shows as below:
    
    
      ![image](https://user-images.githubusercontent.com/109211264/198833763-7237ff9e-eeb8-4daf-96c8-ffabea70a4da.png)
