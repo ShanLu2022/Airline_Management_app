@@ -87,7 +87,10 @@ def flight_manifest():
 
 
   
-  - 
+  - Staff can update/edit passengers' details by clicking the passenger's email address on the page, same as tge passenger list mentioned above.
+  
+  
+  
 
 
 
