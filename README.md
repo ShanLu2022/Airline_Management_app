@@ -21,7 +21,10 @@ The app is developed to provide an airline flight management web application for
   
   ![image](https://user-images.githubusercontent.com/109211264/198868811-550886c9-9d03-4672-9a87-882e7affd151.png)
 
-  1.2 The project structure is shown below:
+  1.2 The project structure 
+  
+  
+  My assumption is as the web app is built by Python Flask, so a standard project structure should be created for further maintenance and developed, for example, in the main project repository, the python files only appear to cover all the main functions or database connection; all the html pages should be saved in the 'templates' folder. So the structure of project repository was built as below:
   
     - Project repository
       - app.py
@@ -31,7 +34,8 @@ The app is developed to provide an airline flight management web application for
         - supportive image & other files
    
    - app.py file includes the main function of the Flask app, all the functions, variables and methods to call all the html files.
-   - connecy.py file saves the varibles (e.g. host, databasename, user and password) to connect database, please notice that there is difference of connection between using the data from local MySQL database and database in Pythonanywhere.
+   - connecy.py file saves the varibles (e.g. host, databasename, user and password) to connect database. 
+   - Assumption: since the data source connection is different between my local MySQL database and the data deployed in Pythonanywhere, so there should be a difference of data connect configuration file.
    - Variables to connect my local database:
    
    ```
@@ -55,7 +59,7 @@ The app is developed to provide an airline flight management web application for
 
 2. Web application
 
-  The main page contains the following functions:
+  My assumption: the web app can be separeted into two the main page contains the following functions:
 
   
   - Home page can be accessed via typing url: http://woshipanda2022.pythonanywhere.com/ or local server: http://127.0.0.1:5000/
