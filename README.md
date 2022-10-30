@@ -35,7 +35,7 @@ The app is developed to provide an airline flight management web application for
    
    - app.py file includes the main function of the Flask app, all the functions, variables and methods to call all the html files.
    - connecy.py file saves the varibles (e.g. host, databasename, user and password) to connect database. 
-   - Assumption: since the data source connection is different between my local MySQL database and the data deployed in Pythonanywhere, so there should be a difference of data connect configuration file.
+   Assumption: since the data source connection is different between my local MySQL database and the data deployed in Pythonanywhere, so there should be a difference of data connect configuration file.
    - Variables to connect my local database:
    
    ```
@@ -59,7 +59,7 @@ The app is developed to provide an airline flight management web application for
 
 2. Web application
 
-  - Home page design. My assumption is the home page should include all the main and general functions, and easy to use for the new visitors, as well as clear to show the general airline information of air Whakatū. For instance a new visitor first time uses the website or in a rush time and does not ant to take a long time to register, so the basic information of the airline and the arrival and departure information should be easily accessed. As a result, on the home page it is easily to nevigate to the arrival and departure information. 
+Home page design. My assumption is the home page should include all the main and general functions, and easy to use for the new visitors, as well as clear to show the general airline information of air Whakatū. For instance a new visitor first time uses the website or in a rush time and does not ant to take a long time to register, so the basic information of the airline and the arrival and departure information should be easily accessed. As a result, on the home page it is easily to nevigate to the arrival and departure information. And my home page is designed as below:
  
   - Home page can be accessed via typing url: http://woshipanda2022.pythonanywhere.com/ or local server: http://127.0.0.1:5000/
     - Home page shows the general information of Air Whakatū
@@ -79,8 +79,12 @@ The app is developed to provide an airline flight management web application for
    - Page footer shows the contact information of Air Whakatū.
   
    - On the top of the page shows the current system time "Friday 28 Oct 2022, 5.00pm"
+  
 
 3. Administrative system for staff
+
+My assumption is since the administrative system is only for the staff use only, so the visitors or passengers cannot access the system, however, there is no staff password data and no confidential information required, so a different access to passenger and staff was not developed. Furthermore, all the admin urls should be differentiated from the normal website routes, so all the admin page addresses begin with admin/xxx. The admin pages are designed as below:
+
    - The airline staff can access the administrative system by typing url https://woshipanda2022.pythonanywhere.com/admin/xx or local server http://127.0.0.1:5000/admin/xx to the pages. The main page of system admin is at 'admin/management' where lists all the staff, including names and position, manager or staff, the screenshot shows as below:
    
    
@@ -118,7 +122,7 @@ The app is developed to provide an airline flight management web application for
   
    ![image](https://user-images.githubusercontent.com/109211264/198860193-cd9e2ff2-df77-40b0-b6b6-b832441aaaa2.png)
 
-  - The output is generated from the SQL query and saved in the app.py file by passing the selected flight id.
+  Here is a request that to show the list is numbered in order, my assumption is the code should be easily maintained and updated, and if there is any new or large information required on the page, then it would take a complex process and long time to update the html page, so my decision is to create the sequence order from the MySQL side via using a variable and loop for each row by adding 1, then pass the row order to the page. The output is generated from the SQL query and saved in the app.py file by passing the selected flight id.
   
 ```python
 def flight_manifest():
