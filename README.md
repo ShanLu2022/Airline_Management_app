@@ -54,19 +54,21 @@ The app is developed to provide an airline flight management web application for
   The main page contains the following functions:
 
   
-  - Home page & general information
+  - Home page can be accessed via typing url: http://woshipanda2022.pythonanywhere.com/ or local server: http://127.0.0.1:5000/
     - Home page shows the general information of Air Whakatū
     - Airport Arrivals & Departures
     - Customer Login
     - New passenger registration
   The screenshot shows as below:
    
-   ![image](https://user-images.githubusercontent.com/109211264/198832823-126ed784-9543-4917-a85b-ce5845809ead.png)
+   ![image](https://user-images.githubusercontent.com/109211264/198869596-40d7e8fe-2263-4068-bccf-9c83c330dc54.png)  
+
 
 
    - Passengers can check the arrival and departure flights information by clicking the "Arrival Flights" & "Departure Flights" individually to nevigate to the corresponding pages as below:
   
    ![image](https://user-images.githubusercontent.com/109211264/198832635-84cd98d3-1ae9-4fb4-8866-bf4afe47dd01.png)
+   
    - Page footer shows the contact information of Air Whakatū.
   
    - On the top of the page shows the current system time "Friday 28 Oct 2022, 5.00pm"
