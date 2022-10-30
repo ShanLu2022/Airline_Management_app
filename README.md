@@ -11,7 +11,7 @@
 The app is developed to provide an airline flight management web application for Air Whakatū. It has been deployed in my local server as well as my Pythonanywhere public server at "http://woshipanda2022.pythonanywhere.com/".
 
 1. Database and project structure 
-  - The database was created from "Airline_create_schema_web_app.sql" file provided, and imported into both my local MySQL database and Pythonanywhere server. The database schema in MySQL database shown as below:
+  1.1 The database was created from "Airline_create_schema_web_app.sql" file provided, and imported into both my local MySQL database and Pythonanywhere server. The database schema in MySQL database shown as below:
   
   ![image](https://user-images.githubusercontent.com/109211264/198868731-5a39e34f-e8a4-460b-a671-bab792b48f15.png)
   
@@ -19,13 +19,13 @@ The app is developed to provide an airline flight management web application for
   
   ![image](https://user-images.githubusercontent.com/109211264/198868811-550886c9-9d03-4672-9a87-882e7affd151.png)
 
-  - The project structure is shown below:
-    -- Project repository
-      -> app.py
-      -> connect.py
-      -> templates
-        -> html files
-        -> supportive image & other files
+  1.2 The project structure is shown below:
+    - Project repository
+      - app.py
+      - connect.py
+      - templates
+        - html files
+        - supportive image & other files
     
 
 2. The main page contains the following functions:
