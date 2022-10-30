@@ -24,7 +24,7 @@ The app is developed to provide an airline flight management web application for
   1.2 The project structure 
   
   
-  My assumption is as the web app is built by Python Flask, so a standard project structure should be created for further maintenance and developed, for example, in the main project repository, the python files only appear to cover all the main functions or database connection; all the html pages should be saved in the 'templates' folder. So the structure of project repository was built as below:
+  My assumption is as the web app is built by Python Flask, so a standard project structure should be created clearly for further maintenance and developed, for example, in the main project repository, the python files only appear to cover all the main functions or database connection; all the html pages should be saved in the 'templates' folder. So the structure of project repository was built as below:
   
     - Project repository
       - app.py
@@ -59,9 +59,8 @@ The app is developed to provide an airline flight management web application for
 
 2. Web application
 
-  My assumption: the web app can be separeted into two the main page contains the following functions:
-
-  
+  - Home page design. My assumption is the home page should include all the main and general functions, and easy to use for the new visitors, as well as clear to show the general airline information of air Whakatū. For instance a new visitor first time uses the website or in a rush time and does not ant to take a long time to register, so the basic information of the airline and the arrival and departure information should be easily accessed. As a result, on the home page it is easily to nevigate to the arrival and departure information. 
+ 
   - Home page can be accessed via typing url: http://woshipanda2022.pythonanywhere.com/ or local server: http://127.0.0.1:5000/
     - Home page shows the general information of Air Whakatū
     - Airport Arrivals & Departures
