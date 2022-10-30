@@ -16,11 +16,17 @@ The app is developed to provide an airline flight management web application for
   ![image](https://user-images.githubusercontent.com/109211264/198868731-5a39e34f-e8a4-460b-a671-bab792b48f15.png)
   
   A similar database was created in Pythonanywhere
+  
   ![image](https://user-images.githubusercontent.com/109211264/198868811-550886c9-9d03-4672-9a87-882e7affd151.png)
 
   - The project structure is shown below:
-    - Project repository
-      - 
+    -- Project repository
+      -- app.py
+      -- connect.py
+      -- templates
+        -- html files
+        -- supportive image & other files
+    
 
 2. The main page contains the following functions:
 
