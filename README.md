@@ -74,8 +74,10 @@ The app is developed to provide an airline flight management web application for
 def flight_manifest():
     flightid = request.args.get('flightid')
     cur = getCursor()
-    cur.execute("Select @n:=(@n := @n +1) AS Seq_Num, t.FlightID, t.FlightNum, t.FlightDate, t.Aircraft, t.DepTime, t.FlightStatus, t.Seating, t.PassengerID, t.FirstName, t.LastName, t.EmailAddress "
-                "from (Select fl.FlightID, fl.FlightNum, fl.FlightDate, fl.Aircraft, fl.DepTime,fl.FlightStatus, ac.Seating, ps.PassengerID, ps.FirstName, ps.LastName, ps.EmailAddress "
+    cur.execute("Select @n:=(@n := @n +1) AS Seq_Num, t.FlightID, t.FlightNum, 
+    t.FlightDate, t.Aircraft, t.DepTime, t.FlightStatus, t.Seating, t.PassengerID, t.FirstName, t.LastName, t.EmailAddress "
+                "from (Select fl.FlightID, fl.FlightNum, fl.FlightDate, fl.Aircraft, fl.DepTime,
+                fl.FlightStatus, ac.Seating, ps.PassengerID, ps.FirstName, ps.LastName, ps.EmailAddress "
                 "from airline.flight fl "
                 "left join airline.passengerFlight pasf on fl.FlightID = pasf.FlightID "
                 "left join airline.passenger ps on pasf.PassengerID = ps.PassengerID "
@@ -85,7 +87,7 @@ def flight_manifest():
 
 
   
-  
+  - 
 
 
 
