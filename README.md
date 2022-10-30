@@ -49,7 +49,8 @@ The app is developed to provide an airline flight management web application for
   dbname = "woshipanda2022$airline"
   ```
    
-   - Folder templates saves all the html files for the web app, supportive image, css file and js file.
+   - Folder 'templates' saves all the html files for the web app, supportive image, css file and js file.
+   
    
 
 2. Web application
@@ -93,7 +94,7 @@ The app is developed to provide an airline flight management web application for
    
      ![image](https://user-images.githubusercontent.com/109211264/198834219-d05c4d7a-ad8f-4e30-adc3-af9cac82c59c.png)
    
-   - Passenger's personal information can be edited by staff via typing the url e.g. "http://127.0.0.1:5000/admin/updatebooking?passengerid=1687":
+   - Passenger's personal information can be edited by staff via typing the url e.g. "https://woshipanda2022.pythonanywhere.com/admin/updatebooking?passengerid=1664" or local server "http://127.0.0.1:5000/admin/updatebooking?passengerid=1687":
    
      ![image](https://user-images.githubusercontent.com/109211264/198859604-caab5055-a672-44b4-9a6b-86608c5c3f5b.png)
 
@@ -103,7 +104,7 @@ The app is developed to provide an airline flight management web application for
   
     ![image](https://user-images.githubusercontent.com/109211264/198859876-87ac28c6-d3ee-474c-9c9e-66a2e70c81eb.png)
    
-  - Then staff enters the flight list page (url: http://127.0.0.1:5000/admin/flights_list), showing all the flights to and from all airports from the current date up to 7 days. The flight list also can be filtered by date range, departure or arrival airports (or a combination of both). See screenshot below:
+  - Then staff enters the flight list page (url: https://woshipanda2022.pythonanywhere.com/admin/flights_list or local server http://127.0.0.1:5000/admin/flights_list), showing all the flights to and from all airports from the current date up to 7 days. The flight list also can be filtered by date range, departure or arrival airports (or a combination of both). See screenshot below:
   
     ![image](https://user-images.githubusercontent.com/109211264/198859998-e262463c-f622-49af-b518-080236d885a3.png)
 
@@ -136,23 +137,23 @@ def flight_manifest():
   - Staff can update/edit passengers' details by clicking the passenger's email address on the page, same as tge passenger list mentioned above.
   
   
-  
-
-
-
-
-  
 4. Public system for customers - New Customer Registration, Login and Update information
 
-  - Customer can login the system via email address on the home page, then nevigate to the login page.
+  - Customer can login the system via email address on the home page, then nevigate to the passenger welcome page.
+  
   ![image](https://user-images.githubusercontent.com/109211264/198833149-dd7f0095-da68-44f9-9630-a18dd9110a79.png)
   
   - login page shows the passenger's basic information including first name, last name, email and contact number. On the bottom of the page lists the current and history booking information.
+  
   ![image](https://user-images.githubusercontent.com/109211264/198833254-d429eafd-0d83-4ab5-a885-f9f4e5aa97fa.png)
 
-  - Passenger can logout the account by clicking the "Logout" bottom to the main page.
-  - Passenger can edit the personal information by clicking the first name to the update page where passengers can update their basic contact information and submit to system, or reset the original information.
+  - Passenger can logout the account by clicking the "Logout" bottom to the home page.
+  
+  - Passenger can edit the personal information by clicking the first name to the update page where passengers can update their basic contact information and submit to system, or reset back to the original information.
+  
   ![image](https://user-images.githubusercontent.com/109211264/198833460-e3f15c07-7c51-437e-8bb0-5f95262b8865.png)
+  
+  
   
   
   
