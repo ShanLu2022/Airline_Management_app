@@ -168,8 +168,8 @@ def flight_manifest():
 
   - The register information requires valid inputs for email address e.g. xxxx@xxx and phone number e.g. +/0064 123 123, if invalid values input into the page, it shows alert message as below:
  
-   ![image](https://user-images.githubusercontent.com/109211264/198870477-6d3e4934-613a-4c2d-8987-caa418eb03d7.png)
-  
+   ![image](https://user-images.githubusercontent.com/109211264/198873305-7d00bbbd-20fb-4fdf-b558-c77006c2a9dc.png)
+
   
   
   - login page shows the passenger's basic information including first name, last name, email and contact number. On the bottom of the page lists the current and history booking information.
