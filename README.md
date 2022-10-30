@@ -46,9 +46,11 @@ The app is developed to provide an airline flight management web application for
   dbname = "woshipanda2022$airline"
   ```
    
+   - Folder templates saves all the html files for the web app, supportive image, css file and js file.
    
 
-2. The main page contains the following functions:
+2. Web application
+  The main page contains the following functions:
 
   
   - Home page & general information
