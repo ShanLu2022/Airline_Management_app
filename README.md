@@ -143,6 +143,16 @@ def flight_manifest():
   
   ![image](https://user-images.githubusercontent.com/109211264/198833149-dd7f0095-da68-44f9-9630-a18dd9110a79.png)
   
+  - If the inpout email address cannot be found in the system, it will be nevigate to the new customer register page, which is shown below:
+  
+  ![image](https://user-images.githubusercontent.com/109211264/198870091-2be750dd-b985-4f0d-968b-5ca86b3c6c47.png)
+
+  - The register information requires valid inputs for email address e.g. xxxx@xxx and phone number e.g. +/0064 123 123, if invalid values input into the page, it shows alert message as below:
+ 
+   ![image](https://user-images.githubusercontent.com/109211264/198870477-6d3e4934-613a-4c2d-8987-caa418eb03d7.png)
+  
+  
+  
   - login page shows the passenger's basic information including first name, last name, email and contact number. On the bottom of the page lists the current and history booking information.
   
   ![image](https://user-images.githubusercontent.com/109211264/198833254-d429eafd-0d83-4ab5-a885-f9f4e5aa97fa.png)
