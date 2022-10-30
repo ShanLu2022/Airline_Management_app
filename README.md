@@ -27,7 +27,26 @@ The app is developed to provide an airline flight management web application for
       - templates
         - html files
         - supportive image & other files
-    
+   
+   - app.py file includes the main function of the Flask app, all the functions, variables and methods to call all the html files.
+   - connecy.py file saves the varibles (e.g. host, databasename, user and password) to connect database, please notice that there is difference of connection between using the data from local MySQL database and database in Pythonanywhere.
+   Variables to connect my local database:
+   ```
+  dbuser = "root"
+  dbpass = "Welcome123" 
+  dbhost = "localhost"
+  dbport = "3306"
+  dbname = "airline"
+  ```
+  Variables to use the data in PythonAnywhere:
+   ```
+  dbuser = "woshipanda2022" 
+  dbpass = "woyaofacai2022$" 
+  dbhost = "woshipanda2022.mysql.pythonanywhere-services.com"
+  dbname = "woshipanda2022$airline"
+  ```
+   
+   
 
 2. The main page contains the following functions:
 
