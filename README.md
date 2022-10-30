@@ -155,6 +155,11 @@ def flight_manifest():
   
   - Staff can update/edit passengers' details by clicking the passenger's email address on the page, same as tge passenger list mentioned above.
   
+  - Managers can edit the details of a flight by clicking the flight number from from the flight list page. Click submit to save the new information in the database.
+  
+  ![image](https://user-images.githubusercontent.com/109211264/198876044-9208fac0-9bd1-4564-aebe-f5a6c632b1b9.png)
+
+  
   
 4. Public system for customers - New Customer Registration, Login and Update information
 
