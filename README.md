@@ -20,6 +20,7 @@ The app is developed to provide an airline flight management web application for
   ![image](https://user-images.githubusercontent.com/109211264/198868811-550886c9-9d03-4672-9a87-882e7affd151.png)
 
   1.2 The project structure is shown below:
+  
     - Project repository
       - app.py
       - connect.py
