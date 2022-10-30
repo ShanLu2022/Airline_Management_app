@@ -38,17 +38,43 @@ The app is developed to provide an airline flight management web application for
  
    - Staff can login by selecting their name from the list;
    
-   - Each staff can check/edit passengers' list and information by clicking the "Check Passenger List" buttom; also can check/edit flight list by clicking the "Check Flight List" buttom:
+   - Each staff can check/edit passengers' list and information by clicking the "Check Passenger List" buttom; also staff can check/edit flight list by clicking the "Check Flight List" buttom:
    
    ![image](https://user-images.githubusercontent.com/109211264/198833910-eee97c76-ed99-4df3-b3c7-2215fea5e151.png)
 
-   - Staff can see a list of all the passengers booking information by an alphabetical order, on the top of the list, staff can filter the key words to select the target passenger's name.
+  2.1 Staff check/update/filter passengers' information
+  - Staff can see a list of all the passengers booking information by an alphabetical order, on the top of the list, staff can filter the key words to select the targeted passenger's name.
    
    ![image](https://user-images.githubusercontent.com/109211264/198834219-d05c4d7a-ad8f-4e30-adc3-af9cac82c59c.png)
    
-   - Passenger's personal information can be edited by staff:
+   - Passenger's personal information can be edited by staff via typing the url e.g. "http://127.0.0.1:5000/admin/updatebooking?passengerid=1687":
    
+   ![image](https://user-images.githubusercontent.com/109211264/198859604-caab5055-a672-44b4-9a6b-86608c5c3f5b.png)
+
    
+  2.2 Staff view/update/filter flight information
+  - After staff login the system, click the "Check Flights List" button to view a list of all flights by flight date, time and departure airport, also including the aircraft detials e.g. Reg mark, seating capacity and available seating numbers.
+  
+   ![image](https://user-images.githubusercontent.com/109211264/198859876-87ac28c6-d3ee-474c-9c9e-66a2e70c81eb.png)
+   
+  - Then staff enters the flight list page (url: http://127.0.0.1:5000/admin/flights_list), showing all the flights to and from all airports from the current date up to 7 days. The flight list also can be filtered by date range, departure or arrival airports (or a combination of both). See screenshot below:
+  
+  ![image](https://user-images.githubusercontent.com/109211264/198859998-e262463c-f622-49af-b518-080236d885a3.png)
+
+
+  - Staff can view or edit flight manifest details by clicking the flight ID from the previous page, including the seating capacity and a list of all of the passengers on the selected flight, for example flight id = 10435 (AW1001):
+  
+  - The flight manifest list is numbered in order from 1 for the first in the list until the last passenger on the flight list, shown in column 1 "Sequence Order". Passengers are also listed in alphabetical order by last name (column 9) followed by first name (column 8).
+  
+  ![image](https://user-images.githubusercontent.com/109211264/198860193-cd9e2ff2-df77-40b0-b6b6-b832441aaaa2.png)
+
+  - The output is generated from the SQL query from the back end:
+  
+
+
+  
+  
+
 
 
 
