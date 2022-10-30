@@ -8,9 +8,21 @@
 #### ---------------------------------------------------------------------------------------------------
 ## Assignment Background:
 
-The app is developed to provide an airline flight management web application for Air Whakatū. 
+The app is developed to provide an airline flight management web application for Air Whakatū. It has been deployed in my local server as well as my Pythonanywhere public server at "http://woshipanda2022.pythonanywhere.com/".
 
-1. The main page contains the following functions:
+1. Database and project structure 
+  - The database was created from "Airline_create_schema_web_app.sql" file provided, and imported into both my local MySQL database and Pythonanywhere server. The database schema in MySQL database shown as below:
+  
+  ![image](https://user-images.githubusercontent.com/109211264/198868731-5a39e34f-e8a4-460b-a671-bab792b48f15.png)
+  
+  A similar database was created in Pythonanywhere
+  ![image](https://user-images.githubusercontent.com/109211264/198868811-550886c9-9d03-4672-9a87-882e7affd151.png)
+
+  - The project structure is shown below:
+    - Project repository
+      - 
+
+2. The main page contains the following functions:
 
   
   - Home page & general information
@@ -30,7 +42,7 @@ The app is developed to provide an airline flight management web application for
   
    - On the top of the page shows the current system time "Friday 28 Oct 2022, 5.00pm"
 
-2. Administrative system for staff
+3. Administrative system for staff
    - The airline staff can access the administrative system by typing url http://127.0.0.1:5000/admin/xx to the pages. The main page of admin system is 'admin/management' where lists all the staff, including names and position, manager or staff, the screenshot shows as below:
    
    
@@ -42,7 +54,7 @@ The app is developed to provide an airline flight management web application for
    
      ![image](https://user-images.githubusercontent.com/109211264/198833910-eee97c76-ed99-4df3-b3c7-2215fea5e151.png)
 
-  2.1 Staff check/update/filter passengers' information
+  3.1 Staff check/update/filter passengers' information
   - Staff can see a list of all the passengers booking information by an alphabetical order, on the top of the list, staff can filter the key words to select the targeted passenger's name.
    
      ![image](https://user-images.githubusercontent.com/109211264/198834219-d05c4d7a-ad8f-4e30-adc3-af9cac82c59c.png)
@@ -52,7 +64,7 @@ The app is developed to provide an airline flight management web application for
      ![image](https://user-images.githubusercontent.com/109211264/198859604-caab5055-a672-44b4-9a6b-86608c5c3f5b.png)
 
    
-  2.2 Staff view/update/filter flight information
+  3.2 Staff view/update/filter flight information
   - After staff login the system, click the "Check Flights List" button to view a list of all flights by flight date, time and departure airport, also including the aircraft detials e.g. Reg mark, seating capacity and available seating numbers.
   
     ![image](https://user-images.githubusercontent.com/109211264/198859876-87ac28c6-d3ee-474c-9c9e-66a2e70c81eb.png)
@@ -96,7 +108,7 @@ def flight_manifest():
 
 
   
-3. Public system for customers - New Customer Registration, Login and Update information
+4. Public system for customers - New Customer Registration, Login and Update information
 
   - Customer can login the system via email address on the home page, then nevigate to the login page.
   ![image](https://user-images.githubusercontent.com/109211264/198833149-dd7f0095-da68-44f9-9630-a18dd9110a79.png)
