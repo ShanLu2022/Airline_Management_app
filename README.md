@@ -107,6 +107,18 @@ My assumption is since the administrative system is only for the staff use only,
 
    
   3.2 Staff view/update/filter flight information
+  
+  This page shows the staff's function after login the system. My assumption is since each staff can have many operations in the system, so it is better to separate the basic staff information and the other functions in different pages rather than having all the information together, for example, on the staff login page, it only shows the basic details of the staff, then the other functions can be nevigated from each staff page, the structure  of staff system is designed shown as below:
+  
+  
+    - Staff login
+      - basic information
+      - other information
+         - Edit/check passenger details
+         - Edit/check flight manifest
+
+  
+  
   - After staff login the system, click the "Check Flights List" button to view a list of all flights by flight date, time and departure airport, also including the aircraft detials e.g. Reg mark, seating capacity and available seating numbers.
   
     ![image](https://user-images.githubusercontent.com/109211264/198859876-87ac28c6-d3ee-474c-9c9e-66a2e70c81eb.png)
