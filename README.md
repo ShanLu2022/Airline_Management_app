@@ -6,18 +6,18 @@
 #### Student Email: shan.lu@lincolnuni.ac.nz
 
 #### ---------------------------------------------------------------------------------------------------
-## Assignment Background:
+# Assignment Background:
 
 The app is developed to provide an airline flight management web application for Air Whakatū. It has been deployed in my local server as well as my Pythonanywhere public server at "http://woshipanda2022.pythonanywhere.com/".
 
 1. Database and project structure 
 
 
-  1.1 The database was created from "Airline_create_schema_web_app.sql" file provided, and imported into both my local MySQL database and Pythonanywhere server. The database schema in MySQL database shown as below:
+   1.1 The database was created from "Airline_create_schema_web_app.sql" file provided, and imported into both my local MySQL database and Pythonanywhere server. The database schema in MySQL database shown as below:
   
   ![image](https://user-images.githubusercontent.com/109211264/198868731-5a39e34f-e8a4-460b-a671-bab792b48f15.png)
   
-  A similar database was created in Pythonanywhere
+   A similar database was created in Pythonanywhere
   
   ![image](https://user-images.githubusercontent.com/109211264/198868811-550886c9-9d03-4672-9a87-882e7affd151.png)
 
@@ -32,7 +32,8 @@ The app is developed to provide an airline flight management web application for
    
    - app.py file includes the main function of the Flask app, all the functions, variables and methods to call all the html files.
    - connecy.py file saves the varibles (e.g. host, databasename, user and password) to connect database, please notice that there is difference of connection between using the data from local MySQL database and database in Pythonanywhere.
-   Variables to connect my local database:
+   - Variables to connect my local database:
+   
    ```
   dbuser = "root"
   dbpass = "Welcome123" 
