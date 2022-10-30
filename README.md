@@ -21,11 +21,11 @@ The app is developed to provide an airline flight management web application for
 
   - The project structure is shown below:
     -- Project repository
-      -- app.py
-      -- connect.py
-      -- templates
-        -- html files
-        -- supportive image & other files
+      -> app.py
+      -> connect.py
+      -> templates
+        -> html files
+        -> supportive image & other files
     
 
 2. The main page contains the following functions:
